@@ -1,2 +1,5 @@
-# funcoes_uteis_javascript
-Biblioteca com minhas funções (Não é reinventar a roda e sim saber como ela funcional)
+# Funcoes Úteis JavaScript
+
+## Biblioteca de funções simples que com certeza deve está em algum framework por aí!!!
+### Não é reinventar a roda, mas sim saber como ela funciona.
+### As vezes a roda pára só quem sabe como ela funciona que poderá consertá-la.
