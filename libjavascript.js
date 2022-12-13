@@ -26,18 +26,7 @@ function addEventListenerAll(eventos, elemento, funcao){
  */
 
 function maiusculaCadaPalavra(texto){
-    //Vou melhorar com expressões regulares
-    texto = texto.trim();
-    console.log(texto)
-    texto = texto.split(" ");
-    console.log(texto);
-    let listaString = []
-    for(let t=0; t<texto.length; t++){
-        if(texto[t] != " " && texto[t] != ""){
-            listaString.push(texto[t])
-        }
-    }
-    texto = listaString.join(" ");
+    texto = texto.trim().split(" ").filter((elemento)=>{return elemento.length > 0}).join(" ");
     let textoModificado = "";
     for(let c = 0; c<texto.length; c++){
         if(c == 0 || texto[c] == " "){
@@ -54,4 +43,4 @@ function maiusculaCadaPalavra(texto){
 return textoModificado;
 }
 
-console.log(maiusculaCadaPalavra("marcelino     marcio de      oliveira"))
+console.log(maiusculaCadaPalavra("marcElino     marcio de      oliveira"))
