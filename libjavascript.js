@@ -26,10 +26,12 @@ function addEventListenerAll(eventos, elemento, funcao){
  */
 
 function maiusculaCadaPalavra(texto){
+    //Vou melhorar com expressões regulares
     texto = texto.trim();
+    console.log(texto)
     texto = texto.split(" ");
+    console.log(texto);
     let listaString = []
-    
     for(let t=0; t<texto.length; t++){
         if(texto[t] != " " && texto[t] != ""){
             listaString.push(texto[t])
