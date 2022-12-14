@@ -21,7 +21,7 @@ function addEventListenerAll(eventos, elemento, funcao){
 
 /**
  * @example
- * @param {String} Obrigatório Uma string pode conter espaços
+ * @param {String} Obrigatório Uma string pode conter espaços tanto no início, meio e fim.
  * @returns {String} Retorna uma string reformata com a primeira letra maiúscula de cada palavra
  */
 
@@ -40,7 +40,8 @@ function maiusculaCadaPalavra(texto){
             textoModificado += texto[c].toLowerCase();
         }
     }
-return textoModificado;
+    textoModificado = textoModificado.replace("De","de").replace("Da", "da").replace("Do", "do");
+    return textoModificado;
 }
 
-console.log(maiusculaCadaPalavra("marcElino     marcio de      oliveira"))
+console.log(maiusculaCadaPalavra("   marcElino  Do   marcio de      oliveira DA silva        "))
