@@ -1,24 +1,3 @@
-"use strict";
-
-/**
- * @example
- * addEventListenerAll("click,mouseover,mouseleave,dblclick", document.getElementById("teste"), funcao)
- * @param {Events} Obrigatório Os eventos devem ser passados em uma única string separado por vírgulas
- * @param {Element} Obrigatório Selecione o elemento que sofrerá os eventos, pode ser o Id do elemento
- * @param {function} Obrigatório Pode passar uma ArrowFunction ou uma outra função externa
- * @returns {void} Não retorna nada
- */
-function addEventListenerAll(eventos, elemento, funcao){
-    eventos.split(",").forEach(evento => {
-        elemento.addEventListener(evento, funcao);
-    });
-}
-
-// Exemplo
-// addEventListenerAll("click,mouseover,mouseleave,dblclick", document.querySelector("body"), (e)=>{
-//     console.log(e.type);
-// });
-
 class StringNameFormat{
 
     constructor(text){
@@ -61,3 +40,15 @@ class StringNameFormat{
         return StringNameFormat.capitalCase(text);
     }
 }
+
+
+
+
+const texto = new StringNameFormat("Marcelino márcio DE OlivEira do santos Carvalho");
+
+console.log(texto.getText());
+console.log(texto.nameAbbreviation());
+texto.setText("simone pereira do lino de oliveira");
+console.log(texto.getText());
+console.log(texto.nameAbbreviation());
+
