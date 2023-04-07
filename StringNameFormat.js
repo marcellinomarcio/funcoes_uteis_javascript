@@ -3,7 +3,7 @@ class StringNameFormat{
     constructor(text){
         this.text = text;
         this.arrayText = StringNameFormat.formatterText(this.text);
-        this.text = StringNameFormat.capitalCase(this.arrayText)
+        this.text = StringNameFormat.firstLetter(this.arrayText)
     }
 
     getText(){
@@ -12,11 +12,11 @@ class StringNameFormat{
 
     setText(value){
         value = StringNameFormat.formatterText(value);
-        value = StringNameFormat.capitalCase(value);
+        value = StringNameFormat.firstLetter(value);
         this.text = value;
     }
 
-    static capitalCase(arrayText){
+    static firstLetter(arrayText){
         arrayText = arrayText.map(txt => txt = txt.charAt(0).toUpperCase()+txt.slice(1));
         return arrayText.toString().replace(/,/g, " ");;
     }
@@ -37,7 +37,7 @@ class StringNameFormat{
                 text[index] = element.charAt(0)+"."
             }
         });
-        return StringNameFormat.capitalCase(text);
+        return StringNameFormat.firstLetter(text);
     }
 }
 
