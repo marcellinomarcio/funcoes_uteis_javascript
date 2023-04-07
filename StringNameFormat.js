@@ -44,11 +44,11 @@ class StringNameFormat{
 
 
 
-const texto = new StringNameFormat("Marcelino márcio DE OlivEira do santos Carvalho");
+const texto = new StringNameFormat("Antonio Carvalho de Morais Silva");
 
 console.log(texto.getText());
 console.log(texto.nameAbbreviation());
-texto.setText("simone pereira do lino de oliveira");
+texto.setText("Jose Maria da Silva de Oliveira");
 console.log(texto.getText());
 console.log(texto.nameAbbreviation());
 
