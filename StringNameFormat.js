@@ -44,7 +44,7 @@ class StringNameFormat{
 
 
 
-const texto = new StringNameFormat("Antonio Carvalho de Morais Silva");
+const texto = new StringNameFormat("    antonio carvalho        de Morais       silva   ");
 
 console.log(texto.getText());
 //output: Antonio Carvalho De Morais Silva
@@ -52,7 +52,7 @@ console.log(texto.getText());
 console.log(texto.nameAbbreviation());
 //output: Antonio C. M. Silva
 
-texto.setText("Jose Maria da Silva de Oliveira");
+texto.setText("jose      maria   da silva de      oliveira");
 console.log(texto.getText());
 //output: Jose Maria Da Silva De Oliveira
 
